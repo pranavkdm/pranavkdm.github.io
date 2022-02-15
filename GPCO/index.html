@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>GPCO</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>GPCO</b>: An Unsupervised Green <br>Point Cloud Odometry Method</br> 
+                <small>
+                    Submitted to Pattern Recognition Letters
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://pranavkdm.github.io/">
+                          Pranav Kadam
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">
+                            Min Zhang
+                        </a>
+                        </br>University of Southern California
+                    </li><br>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shanliu">
+                          Shan Liu
+                        </a>
+                        </br>Tencent Media Lab
+                    </li>
+                    <li>
+                        <a href="https://mcl.usc.edu/people/cckuo/">
+                          C.-C. Jay Kuo
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/pdf/2112.04054.pdf">
+                            <image src="img/paper.PNG" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+<!--  
+                        <li>
+                            <a href="https://github.com/google/mipnerf">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4> 
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Visual odometry aims to track the incremental motion of an object using the information captured by
+visual sensors. In this work, we study the point cloud odometry problem, where only the point cloud
+scans obtained by the LiDAR (Light Detection And Ranging) are used to estimate object's motion
+trajectory. A lightweight point cloud odometry solution is proposed and named the green point cloud
+odometry (GPCO) method. GPCO is an unsupervised learning method that predicts object motion by
+matching features of consecutive point cloud scans. It consists of three steps. First, a geometry-aware
+point sampling scheme is used to select discriminant points from the large point cloud. Second, the
+view is partitioned into four regions surrounding the object, and the PointHop++ method is used
+to extract point features. Third, point correspondences are established to estimate object motion
+between two consecutive scans. Experiments on the KITTI dataset are conducted to demonstrate
+the effectiveness of the GPCO method. It is observed that GPCO outperforms benchmarking deep
+learning methods in accuracy while it has a significantly smaller model size and less training time.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method overview
+                </h3>
+                <image src="img/Architecture-GPCO.PNG" class="img-responsive" alt="overview"><br>
+
+            </div>
+        </div>
+
+<!-- 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Wikipedia</a> provides an excellent introduction to spatial anti-aliasing techniques.
+                </p>
+            
+                </p>
+            </div>
+        </div> -->
+        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{kadam2021gpco,
+   title={GPCO: An Unsupervised Green Point Cloud Odometry Method},
+   author={Kadam, Pranav and Zhang, Min and Liu, Shan and Kuo, C-C Jay},
+   journal={arXiv preprint arXiv:2112.04054},
+   year={2021}
+   }
+</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgement
+                </h3>
+                <p class="text-justify">
+                This work was supported by Tencent Media Lab.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
