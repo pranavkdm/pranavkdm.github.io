@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>PointHop</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>PointHop</b>: An Explainable Machine Learning Method <br> for Point Cloud Classification</br> 
+                <small>
+                    IEEE Transactions on Multimedia, 2020
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">
+                          Min Zhang
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?hl=en&user=BhysChMAAAAJ&view_op=list_works&sortby=pubdate">
+                          Haoxuan You
+                        </a>
+                        </br>Columbia University
+                    </li>
+                    <li>
+                        <a href="https://pranavkdm.github.io/">
+                          Pranav Kadam
+                        </a>
+                        </br>University of Southern California
+                    </li><br>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shanliu">
+                          Shan Liu
+                        </a>
+                        </br>Tencent Media Lab
+                    </li>
+                    <li>
+                        <a href="https://mcl.usc.edu/people/cckuo/">
+                          C.-C. Jay Kuo
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://ieeexplore.ieee.org/document/8947948">
+                            <image src="img/paper.PNG" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+ 
+                        <li>
+                            <a href="https://github.com/minzhang-1/PointHop">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    An explainable machine learning method for point
+cloud classification, called the PointHop method, is proposed in
+this work. The PointHop method consists of two stages: 1) local to-global attribute building through iterative one-hop information
+exchange and 2) classification and ensembles. In the attribute
+building stage, we address the problem of unordered point cloud
+data using a space partitioning procedure and developing a robust
+descriptor that characterizes the relationship between a point and
+its one-hop neighbor in a PointHop unit. When we put multiple
+PointHop units in cascade, the attributes of a point will grow by
+taking its relationship with one-hop neighbor points into account
+iteratively. Furthermore, to control the rapid dimension growth
+of the attribute vector associated with a point, we use the Saab
+transform to reduce the attribute dimension in each PointHop unit.
+In the classification and ensemble stage, we feed the feature vector
+obtained from multiple PointHop units to a classifier. We explore
+ensemble methods to improve the classification performance
+furthermore. It is shown by experimental results that the PointHop
+method offers classification performance that is comparable with
+state-of-the-art methods while demanding much lower training
+complexity.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method overview
+                </h3>
+                <image src="img/Architecture-PointHop.PNG" class="img-responsive" alt="overview"><br>
+
+            </div>
+        </div>
+
+<!-- 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Wikipedia</a> provides an excellent introduction to spatial anti-aliasing techniques.
+                </p>
+            
+                </p>
+            </div>
+        </div> -->
+        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{zhang2020pointhop,
+   title={Pointhop: An explainable machine learning method for point cloud 
+   classification},
+   author={Zhang, Min and You, Haoxuan and Kadam, Pranav and Liu, Shan and Kuo, C-C 
+   Jay},
+   journal={IEEE Transactions on Multimedia},
+   volume={22},
+   number={7},
+   pages={1744--1755},
+   year={2020},
+   publisher={IEEE}
+   }
+</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgement
+                </h3>
+                <p class="text-justify">
+                This work was supported by Tencent Media Lab.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
