@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>GSIP</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>GSIP</b>: Green Semantic Segmentation of <br> Large-Scale Indoor Point Clouds</br> 
+                <small>
+                    Submitted Pattern Recognition Letters
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">
+                          Min Zhang
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    <li>
+                        <a href="https://pranavkdm.github.io/">
+                            Pranav Kadam
+                        </a>
+                        </br>University of Southern California
+                    </li><br>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shanliu">
+                          Shan Liu
+                        </a>
+                        </br>Tencent Media Lab
+                    </li>
+                    <li>
+                        <a href="https://mcl.usc.edu/people/cckuo/">
+                          C.-C. Jay Kuo
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/pdf/2109.11835.pdf">
+                            <image src="img/paper.PNG" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+<!--  
+                        <li>
+                            <a href="https://github.com/google/mipnerf">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4> 
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    An efficient solution to semantic segmentation of large-scale indoor scene point clouds is proposed
+in this work. It is named GSIP (Green Segmentation of Indoor Point clouds) and its performance
+is evaluated on a representative large-scale benchmark — the Stanford 3D Indoor Segmentation
+(S3DIS) dataset. GSIP has two novel components: 1) a room-style data pre-processing method
+that selects a proper subset of points for further processing, and 2) a new feature extractor which is
+extended from PointHop. For the former, sampled points of each room form an input unit. For the
+latter, the weaknesses of PointHop's feature extraction when extending it to large-scale point clouds
+are identified and fixed with a simpler processing pipeline. As compared with PointNet, which is a
+pioneering deep-learning-based solution, GSIP is green since it has significantly lower computational
+complexity and a much smaller model size. Furthermore, experiments show that GSIP outperforms
+PointNet in segmentation performance for the S3DIS dataset.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method overview
+                </h3>
+                <image src="img/Architecture-GSIP.PNG" class="img-responsive" alt="overview"><br>
+
+            </div>
+        </div>
+
+<!-- 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Wikipedia</a> provides an excellent introduction to spatial anti-aliasing techniques.
+                </p>
+            
+                </p>
+            </div>
+        </div> -->
+        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{zhang2021gsip,
+   title={GSIP: Green Semantic Segmentation of Large-Scale Indoor Point Clouds},
+   author={Zhang, Min and Kadam, Pranav and Liu, Shan and Kuo, C-C Jay},
+   journal={arXiv preprint arXiv:2109.11835},
+   year={2021}
+   }
+</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgement
+                </h3>
+                <p class="text-justify">
+                This work was supported by Tencent Media Lab.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
