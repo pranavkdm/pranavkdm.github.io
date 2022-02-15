@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>PCRP</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>PCRP</b>: Unsupervised Point Cloud Object  <br> Retrieval and Pose Estimation</br> 
+                <small>
+                    Submitted to IEEE International Conference on Image Processing 2022
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://pranavkdm.github.io/">
+                          Pranav Kadam
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    <li>
+                        <a href="https://mcl.usc.edu/people/graduate-students/#Qingyang_Zhou">
+                            Qingyang Zhou
+                        </a>
+                        </br>University of Southern California
+                    </li><br>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shanliu">
+                          Shan Liu
+                        </a>
+                        </br>Tencent Media Lab
+                    </li>
+                    <li>
+                        <a href="https://mcl.usc.edu/people/cckuo/">
+                          C.-C. Jay Kuo
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="./PCRP.pdf">
+                            <image src="img/paper.PNG" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+<!--  
+                        <li>
+                            <a href="https://github.com/google/mipnerf">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4> 
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    An unsupervised point cloud object retrieval and pose estimation method,
+called PCRP, is proposed in this work. It is assumed that there exists a
+gallery point cloud set that contains point cloud objects with given
+pose orientation information. PCRP attempts to register the unknown
+point cloud object with those in the gallery set so as to achieve
+content-based object retrieval and pose estimation jointly, where the
+point cloud registration task is built upon an enhanced version of the
+unsupervised R-PointHop method. Experiments on the ModelNet40 dataset
+demonstrate the superior performance of PCRP in comparison with
+traditional and learning based methods. 
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method overview
+                </h3>
+                <image src="img/Architecture-PCRP.png" class="img-responsive" alt="overview"><br>
+
+            </div>
+        </div>
+
+<!-- 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Wikipedia</a> provides an excellent introduction to spatial anti-aliasing techniques.
+                </p>
+            
+                </p>
+            </div>
+        </div> -->
+        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+   Coming soon
+</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgement
+                </h3>
+                <p class="text-justify">
+                This work was supported by Tencent Media Lab.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
