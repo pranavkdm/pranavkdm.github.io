@@ -30,9 +30,9 @@
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b>GPCO</b>: An Unsupervised Green <br>Point Cloud Odometry Method</br> 
+                <b>GreenPCO</b>: An Unsupervised Lightweight <br>Point Cloud Odometry Method</br> 
                 <small>
-                    Submitted to Pattern Recognition Letters
+                    IEEE International Workshop on Multimedia Signal Processing (MMSP), 2022
                 </small>
             </h2>
         </div>
@@ -48,6 +48,12 @@
                     <li>
                         <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">
                             Min Zhang
+                        </a>
+                        </br>University of Southern California
+                    </li><br>
+                    <li>
+                        <a href="http://mcl.usc.edu/people/graduate-students/#Jiahao_Gu">
+                            Jiahao Gu
                         </a>
                         </br>University of Southern California
                     </li><br>
@@ -96,18 +102,23 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-                    Visual odometry aims to track the incremental motion of an object using the information captured by
-visual sensors. In this work, we study the point cloud odometry problem, where only the point cloud
-scans obtained by the LiDAR (Light Detection And Ranging) are used to estimate object's motion
-trajectory. A lightweight point cloud odometry solution is proposed and named the green point cloud
-odometry (GPCO) method. GPCO is an unsupervised learning method that predicts object motion by
-matching features of consecutive point cloud scans. It consists of three steps. First, a geometry-aware
-point sampling scheme is used to select discriminant points from the large point cloud. Second, the
-view is partitioned into four regions surrounding the object, and the PointHop++ method is used
-to extract point features. Third, point correspondences are established to estimate object motion
-between two consecutive scans. Experiments on the KITTI dataset are conducted to demonstrate
-the effectiveness of the GPCO method. It is observed that GPCO outperforms benchmarking deep
-learning methods in accuracy while it has a significantly smaller model size and less training time.
+                    Visual odometry aims to track the incremental motion of an object using
+                    the information captured by visual sensors. In this work, we study the
+                    point cloud odometry problem, where only the point cloud scans obtained
+                    by the LiDAR (Light Detection And Ranging) are used to estimate object's
+                    motion trajectory. A lightweight point cloud odometry solution is
+                    proposed and named the green point cloud odometry (GreenPCO) method.  GreenPCO
+                    is an unsupervised learning method that predicts object motion by
+                    matching features of consecutive point cloud scans. It consists of three
+                    steps. First, a geometry-aware point sampling scheme is used to select
+                    discriminant points from the large point cloud. Second, the view is
+                    partitioned into four regions surrounding the object, and the PointHop++
+                    method is used to extract point features. Third, point correspondences
+                    are established to estimate object motion between two consecutive scans.
+                    Experiments on the KITTI dataset are conducted to demonstrate the
+                    effectiveness of the GreenPCO method.  It is observed that GreenPCO outperforms
+                    benchmarking deep learning methods in accuracy while it has a
+                    significantly smaller model size and less training time.
                 </p>
             </div>
         </div>
@@ -146,9 +157,9 @@ learning methods in accuracy while it has a significantly smaller model size and
                     <textarea id="bibtex" class="form-control" readonly>
 @article{kadam2021gpco,
    title={GPCO: An Unsupervised Green Point Cloud Odometry Method},
-   author={Kadam, Pranav and Zhang, Min and Liu, Shan and Kuo, C-C Jay},
+   author={Kadam, Pranav and Zhang, Min and Gu, Jiahao and Liu, Shan and Kuo, C-C Jay},
    journal={arXiv preprint arXiv:2112.04054},
-   year={2021}
+   year={2022}
    }
 </textarea>
                 </div>
