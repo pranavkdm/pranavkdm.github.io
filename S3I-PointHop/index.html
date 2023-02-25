@@ -1,673 +1,175 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Pranav Kadam</title>
-  
-  <meta name="author" content="Pranav Kadam">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<!--   <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>S3I-PointHop</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-		      <name>Pranav Kadam</name>
-              </p>
-              <p>I am a second year PhD student in the Electrical and Computer Engineering department at University of Southern California (<a href="https://www.usc.edu/">USC</a>). Presently, I work as a Research Assistant under Prof. <a href="https://mcl.usc.edu/people/cckuo/">C.-C. Jay Kuo</a> at <a href="https://mcl.usc.edu/">Media Communications Lab</a>. 
-<!-- 		      I completed my Masters degree in Electrical Engineering from USC and Bachelors degree in Electronics and Telecommunication Engineering from Savitribai Phule Pune University (<a href="http://www.unipune.ac.in/">SPPU</a>). -->
-              </p>
-              <p>
-                At Google I've worked on <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://www.google.com/get/cardboard/jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://www.youtube.com/watch?v=JSnB06um5r4">Glass</a>, and <a href="https://www.matthewtancik.com/nerf">NeRF</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:pranavka@usc.edu">Email</a> &nbsp/&nbsp
-                <a href="data/Updated_Resume.pdf">CV</a> &nbsp/&nbsp
-                <a href="data/PranavKadam-bio.txt">Bio</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=eV8moYMAAAAJ&hl=en&authuser=1">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/pranavkadam/">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://github.com/pranavkdm/">Github</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:80%;max-width:80%" alt="profile photo" src="images/PRANAV_KADAM-cropped.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-	      
-	      
-	      
-      <!-- News -->
-
-                <!-- <br> -->
-                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-news" id="news"><heading>News</heading></button>
-                <!-- <div class="container"> -->
-                <div id="content-news" class="collapse in">
-                <!-- <div class="scroll">  -->
-
-                <table border=0 class="bg_colour" style="padding:10px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                    <tr>
-                        <td>
-                            <p style="color:maroon; display:inline">Dec '21 &nbsp</p>
-                        </td>
-                        <td>
-                            Accepted Research Internship offer from <a href="https://www.interdigital.com/research-and-innovation" target="_blank">InterDigital</a> Research and Innovation group
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p style="color:maroon; display:inline">Dec '21 &nbsp</p>
-                        </td>
-                        <td>
-                            Book on 3D Point Cloud Analysis published in <a href="https://link.springer.com/book/10.1007/978-3-030-89180-0" target="_blank">Springer Nature</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p style="color:maroon; display:inline">Nov '21 &nbsp</p>
-                        </td>
-                        <td>
-				Paper on 3D point cloud registration accepted in IEEE Transactions on Image Processing (minor revision)
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p style="color:maroon; display:inline">Dec '20 &nbsp</p>
-                        </td>
-                        <td>
-                            Presented <a href="https://ieeexplore.ieee.org/document/9301874" target="_blank">paper</a> at IEEE VCIP 2020
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p style="color:maroon; display:inline">Nov '20 &nbsp</p>
-                        </td>
-                        <td>
-                            Paper nominated for Best Paper Award at IEEE VCIP 2020
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p style="color:maroon; display:inline">Aug '20 &nbsp</p>
-                        </td>
-                        <td>
-                            Started PhD at University of Southern California
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p style="color:maroon; display:inline">May '19 &nbsp</p>   
-                        </td>
-                        <td>
-                          <a href="https://www.youtube.com/watch?v=DlexTdSEmoY" target="_blank">Project</a> on Photorealistic Style Transfer won Best Project Award in EE 599 Deep Learning class
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p style="color:maroon; display:inline">Aug '18 &nbsp</p>
-                        </td>
-                        <td>
-                            Started MS in Electrical Engineering at University of Southern California
-                        </td>
-                    </tr>
-
-                </tbody></table>
-                <!-- </div> -->
-                <!-- </div> -->
-                </div>
-                <hr class="soft">
-	      
-	      
-	      <!-- Education -->
-
-                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-education" id="education"><heading>Education</heading></button>
-                <div id="content-experience" class="collapse in">
-
-                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:middle">
-                            <div class="one">
-                                <img src='images/USC-logo.png' width="110" class="side-image">
-                            </div>
-                        </td>
-                        <td style="padding:10px;width:75%;vertical-align:top">
-                            <!-- <papertitle style="color:gray"><big>Software Development Engineer Intern</big> </papertitle> <papertitle ><big> | Expedia Group</big></papertitle> -->
-                            <papertitle><big>University of Southern California</big></papertitle>
-                            <br>
-                            <papertitle style="color:maroon"><big>Doctor of Philosophy (PhD), </big></papertitle><papertitle><big>Electrical Engineering</big></papertitle>
-                            <br>
-                          </papertitle><papertitle><big>GPA - 3.88/4</big></papertitle>
-                          <br>
-			    <i>Los Angeles, CA</i>
-                            <br>                              							    
-                            August 2020 - May 2023 (expected)
-                            <br>
-                            <br>
-                            <p>
-                              <ul>
-                                <li><b>Research focus -</b> 3D point cloud processing and analysis</li>
-                            
-                                <li><b>Coursework -</b> Algorithms, Robotics, Machine Learning, Multimedia Compression, Random Processes</li>
-                              </ul>
-                            </p>
-                        </td>
-                    </tr>
-
-                </tbody></table>
-	
-	
-		<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:middle">
-                            <div class="one">
-                                <img src='images/USC-logo.png' width="110" class="side-image">
-                            </div>
-                        </td>
-                        <td style="padding:10px;width:75%;vertical-align:top">
-                            <!-- <papertitle style="color:gray"><big>Software Development Engineer Intern</big> </papertitle> <papertitle ><big> | Expedia Group</big></papertitle> -->
-                            <papertitle><big>University of Southern California</big></papertitle>
-                            <br>
-                            <papertitle style="color:maroon"><big>Master of Science (Honors), </big></papertitle><papertitle><big>Electrical Engineering</big></papertitle>
-                            <br>
-                            <papertitle><big>GPA - 3.91/4</big></papertitle>
-                            <br>
-			    <i>Los Angeles, CA</i>
-			    <br>
-                            August 2018 - May 2020
-                            <br>
-                            <br>
-                            <p>
-                              <ul>
-                                <li><b>Coursework -</b> Computer Vision, Deep Learning, Digital Image Processing, Robotics, Linear Algebra, Probability, DIgital Signal Processing, Stochastic Systems and Reinforcement Learning</li>
-                              </ul>
-                          </p>
-                        </td>
-                    </tr>
-
-                </tbody></table>
-
-
-		<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:middle">
-                            <div class="one">
-                                <img src='images/SPPU.jpg' width="110" class="side-image">
-                            </div>
-                        </td>
-                        <td style="padding:10px;width:75%;vertical-align:top">
-                            <!-- <papertitle style="color:gray"><big>Software Development Engineer Intern</big> </papertitle> <papertitle ><big> | Expedia Group</big></papertitle> -->
-                            <papertitle><big>Savitribai Phule Pune University</big></papertitle>
-                            <br>
-                            <papertitle style="color:maroon"><big>Bachelor of Engineering, </big></papertitle><papertitle><big>Electronics and Telecommunication</big></papertitle>
-                            <br>
-                          </papertitle><papertitle><big>GPA - 3.9/4</big></papertitle>
-                          <br>
-			    <i>Pune, India</i>
-			    <br>
-                            July 2014 - May 2018
-                            <br>
-                            <br>
-                            <p>
-                                
-                                <ul>
-                                  <li><b>Selected Coursework -</b>Embedded Systems, Artificial Intelligence, Soft Computing, Digital Electronics, Operating Systems</li>
-                                    <li><b>Activities -</b> Vice Chairman at IEEE Students Branch</li>
-                                </ul>
-                            </p>
-                        </td>
-                    </tr>
-
-                </tbody></table>
-
-                </div>
-                <hr class="soft">
-	      
-	      
-	      <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-education" id="education"><heading>Research Experience</heading></button>
-                <div id="content-experience" class="collapse in">
-
-                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:middle">
-                            <div class="one">
-                                <img src='images/USC-logo.png' width="110" class="side-image">
-                            </div>
-                        </td>
-                        <td style="padding:10px;width:75%;vertical-align:top">
-                            <!-- <papertitle style="color:gray"><big>Software Development Engineer Intern</big> </papertitle> <papertitle ><big> | Expedia Group</big></papertitle> -->
-                            <papertitle><big>University of Southern California</big></papertitle>
-                            <br>
-                            <papertitle style="color:maroon"><big>Research Assistant</big></papertitle>
-                            <br>
-			    <i>Los Angeles, CA</i>
-                            <br>                              							    
-                            May 2019 - present
-                            <br>
-                            <br>
-                            <p>
-                                
-                                <ul>
-                                    <li><b>Supervisor -</b> C.-C. Jay Kuo</li>
-                                    <li><b>Projects - </b>Point cloud classification, registration, segmentation, compression, and quality assessment</li>
-                                </ul>
-                            </p>
-                        </td>
-                    </tr>
-
-                </tbody></table>
-	
-	
-		<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:middle">
-                            <div class="one">
-                                <img src='images/IUCAA.png' width="110" class="side-image">
-                            </div>
-                        </td>
-                        <td style="padding:10px;width:75%;vertical-align:top">
-                            <!-- <papertitle style="color:gray"><big>Software Development Engineer Intern</big> </papertitle> <papertitle ><big> | Expedia Group</big></papertitle> -->
-                            <papertitle><big>Inter University Centre for Astronomy and Astrophysics (IUCAA)</big></papertitle>
-                            <br>
-                            <papertitle style="color:maroon"><big>Research Intern</big></papertitle>
-                            <br>
-			    <i>Pune, India</i>
-			    <br>
-                            September 2017 - March 2018
-                            <br>
-                            <br>
-                            <p>
-                              <ul>
-                                <li><b>Supervisor - </b>Dipankar Bhattacharya </li>
-                                <li><b>Project - </b>Detection and Analysis of Gamma Ray Bursts (GRBs) from Astrosat Satellite data</li>
-                              </ul>
-                                
-                            </p>
-                        </td>
-                    </tr>
-
-                </tbody></table>
-			
-			</div>
-                <hr class="soft">
-	      
-	      
-	      <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-education" id="education"><heading>Teaching Experience</heading></button>
-                <div id="content-experience" class="collapse in">
-
-                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:middle">
-                            <div class="one">
-                                <img src='images/USC-logo.png' width="110" class="side-image">
-                            </div>
-                        </td>
-                        <td style="padding:10px;width:75%;vertical-align:top">
-                            <papertitle><big>University of Southern California</big></papertitle>
-                            <br>
-                            <papertitle style="color:maroon"><big>Teaching Assistant</big></papertitle>
-                            <br>
-			    <i>Los Angeles, CA</i>
-                            <br>                              							    
-                            August 2021 - present
-                            <br>
-                            <br>
-                            <p>
-                                <ul>
-					                          <li>EE 569 - Introduction to Digital Image Processing, <i>Spring 2022</i></li>
-                                    <li>EE 510 - Linear Algebra, <i>Fall 2021</i></li>   
-                                </ul>
-                            </p>
-                        </td>
-                    </tr>
-
-                </tbody></table>
-	      
-			</div>
-                <hr class="soft">
-	
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Book</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/Book.jpg' height="180">
-              </div>
-
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://link.springer.com/book/10.1007/978-3-030-89180-0">
-                <papertitle>3D Point Cloud Analysis: Traditional, Deep Learning, and Explainable Machine Learning Methods</papertitle>
-              </a>
-              <br>
-	      <a href="https://www.linkedin.com/in/shanliu">Shan Liu</a>,
-              <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">Min Zhang</a>,
-	      <strong>Pranav Kadam</strong>,
-              <a href="https://mcl.usc.edu/people/cckuo/">C.-C. Jay Kuo</a>
-              <br>
-							<em>Springer Nature, 2021</em>
-              <br>
-              <a href="http://jonbarron.info/mipnerf360">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2111.12077">arXiv</a>
-              /
-              <a href="https://youtu.be/zBSH-k9GbV4">video</a>
-              <p></p>
-              <p>An introductory book on 3D Point Clouds aimed for graduate students with basic knowledge of Machine Learning and who wish to get started with point clouds.</p>
-            </td>
-          </tr> 
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>
-              <p>
-                First author publications are <span class="highlight">highlighted</span>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/Architecture-PCRP.png' width="180" height="160">
-              </div>
-
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="./PCRP/index.html">
-                <papertitle>PCRP: Unsupervised Point Cloud Object Retrieval and Pose Estimation</papertitle>
-              </a>
-              <br>
-              <strong>Pranav Kadam</strong>,
-              <a href="https://mcl.usc.edu/people/graduate-students/#Qingyang_Zhou">Qingyang Zhou</a>,
-              <a href="https://www.linkedin.com/in/shanliu">Shan Liu</a>,
-              <a href="https://mcl.usc.edu/people/cckuo/">C.-C. Jay Kuo</a>,
-              <br>
-							<em>Submitted to IEEE International Conference on Image Processing, 2022</em>
-              <br>
-              <a href="./PCRP/index.html">project page</a>
-              <!-- /
-              <a href="https://arxiv.org/abs/2111.12077">arXiv</a> -->
-            
-              <p>First, a similar pre-aligned point cloud is retrieved from the gallery set. Then, the input object is registered to the retrieved object to estimate its pose.</p>
-            </td>
-          </tr> 
-
-
-          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/mip360_sat.jpg' width="160">
-              </div>
-          
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="./GPCO/index.html">
-                <papertitle>GPCO: An Unsupervised Green Point Cloud Odometry Method</papertitle>
-              </a>
-              <br>
-              <strong>Pranav Kadam</strong>,
-              <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">Min Zhang</a>,
-              <a href="https://www.linkedin.com/in/shanliu">Shan Liu</a>,
-              <a href="https://mcl.usc.edu/people/cckuo/">C.-C. Jay Kuo</a>,
-              <br>
-							<em>Submitted to Pattern Recognition Letters, 2021</em>
-              <br>
-              <a href="./GPCO/index.html">project page</a>
-              |
-              <a href="https://arxiv.org/abs/2112.04054">arXiv</a>
-             
-              <p>Extension of R-PointHop for estimating the trajectory of an object from LiDAR scans.</p>
-            </td>
-          </tr> 
-		
-	<tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/mip360_sat.jpg' width="160">
-              </div>
-              
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="./GSIP/index.html">
-                <papertitle>GSIP: Green Semantic Segmentation of Large-Scale Indoor Point Clouds</papertitle>
-              </a>
-              <br>
-	      <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">Min Zhang</a>,
-	      <strong>Pranav Kadam</strong>,
-              <a href="https://www.linkedin.com/in/shanliu">Shan Liu</a>,
-              <a href="https://mcl.usc.edu/people/cckuo/">C.-C. Jay Kuo</a>
-              <br>
-							<em>Submitted to Pattern Recognition Letters, 2021</em>
-              <br>
-              <a href="./GSIP/index.html">project page</a>
-              |
-              <a href="https://arxiv.org/abs/2109.11835">arXiv</a>
-              
-              <p>Point cloud indoor scene semantic segmentation method using novel point cloud partitioning and processing.</p>
-            </td>
-          </tr>
-		
-	<tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-              
-                <img src='images/mip360_sat.jpg' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="./R-PointHop/index.html">
-                <papertitle>R-PointHop: A Green, Accurate and Unsupervised Point Cloud Registration Method</papertitle>
-              </a>
-              <br>
-              <strong>Pranav Kadam</strong>,
-              <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">Min Zhang</a>,
-              <a href="https://www.linkedin.com/in/shanliu">Shan Liu</a>,
-              <a href="https://mcl.usc.edu/people/cckuo/">C.-C. Jay Kuo</a>
-              <br>
-							<em>Accepted (minor changes) at IEEE Transactions on Image Processing, 2021</em>
-              <br>
-              <a href="./R-PointHop/index.html">project page</a>
-              |
-              <a href="https://arxiv.org/abs/2103.08129">arXiv</a>
-
-              <p>Point cloud registration of indoor scenes and CAD models.</p>
-            </td>
-          </tr>
-		
-	<tr onmouseout="mip360_stop()" onmouseover="mip360_start()" >
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                
-                <img src='images/mip360_sat.jpg' width="160">
-              </div>
-              
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="./UFF/index.html">
-                <papertitle>Unsupervised feedforward feature (UFF) learning for point cloud classification and segmentation</papertitle>
-              </a>
-              <br>
-              <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">Min Zhang</a>,
-	      <strong>Pranav Kadam</strong>,
-              <a href="https://www.linkedin.com/in/shanliu">Shan Liu</a>,
-              <a href="https://mcl.usc.edu/people/cckuo/">C.-C. Jay Kuo</a>
-              <br>
-							<em>IEEE Internation Comference on Visual Communication and Image Processing, 2020</em>
-              <br>
-              <a href="./UFF/index.html">project page</a>
-              |
-              <a href="https://arxiv.org/abs/2009.01280">arXiv</a>
-              
-              <p>Point cloud shape part segmentation method.</p>
-            </td>
-          </tr>
-		
-	<tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                
-                <img src='images/mip360_sat.jpg' width="160">
-              </div>
-              
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="./SPA/index.html">
-                <papertitle>Unsupervised Point Cloud Registration via Salient Points Analysis (SPA)</papertitle>
-              </a>
-              <br>
-              <strong>Pranav Kadam</strong>,
-              <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">Min Zhang</a>,
-              <a href="https://www.linkedin.com/in/shanliu">Shan Liu</a>,
-              <a href="https://mcl.usc.edu/people/cckuo/">C.-C. Jay Kuo</a>,
-              <br>
-							<em>IEEE Internation Comference on Visual Communication and Image Processing, 2020</em>
-              <br>
-              <a href="./SPA/index.html">project page</a>
-              |
-              <a href="https://arxiv.org/abs/2009.01293">arXiv</a>
-              
-              <p>Extension of PointHop++ for point cloud registration using salient points derived from local geometry information.</p>
-            </td>
-          </tr>
-		
-	<tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-              
-                <img src='images/mip360_sat.jpg' width="160">
-              </div>
-              
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="./PointHop++/index.html">
-                <papertitle>PointHop++: A lightweight learning model on point sets for 3D classification</papertitle>
-              </a>
-              <br>
-              <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">Min Zhang</a>,
-              <a href="https://mcl.usc.edu/people/graduate-students/#Yifan_Wang">Yifan Wang</a>,
-	      <strong>Pranav Kadam</strong>,
-              
-              <a href="https://www.linkedin.com/in/shanliu">Shan Liu</a>,
-              <a href="https://mcl.usc.edu/people/cckuo/">C.-C. Jay Kuo</a>
-              <br>
-							<em>IEEE International Conference on Image Processing, 2020</em>
-              <br>
-              <a href="./PointHop++/index.html">project page</a>
-              |
-              <a href="https://arxiv.org/abs/2002.03281">arXiv</a>
-              
-              <p>Incorporation of Channel-wise Saab transform for efficient point cloud classification</p>
-            </td>
-          </tr>
-
-    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          
-          <img src='images/refnerf.jpg' width="160">
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>PCRP</b>: S3I-PointHop: SO (3)-Invariant PointHop <br> for 3D Point Cloud Classification</br> 
+                <small>
+                    IEEE International Conference on Acoustics, Speech and Signal Processing
+                </small>
+            </h2>
         </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://pranavkdm.github.io/">
+                          Pranav Kadam
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    <li>
+                        <a href="http://mcl.usc.edu/people/graduate-students/#Hardik_Prajapati">
+                            Hardik Prajapati
+                        </a>
+                        </br>University of Southern California
+                    </li><br>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">
+                            Min Zhang
+                        </a>
+                        </br>University of Southern California
+                    </li><br>
+                    <li>
+                        <a href="http://mcl.usc.edu/people/graduate-students/#Jintang_Xue">
+                            Qingyang Zhou
+                        </a>
+                        </br>Jintang Xue
+                    </li><br>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shanliu">
+                          Shan Liu
+                        </a>
+                        </br>Tencent Media Lab
+                    </li>
+                    <li>
+                        <a href="https://mcl.usc.edu/people/cckuo/">
+                          C.-C. Jay Kuo
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="./S3I-PointHop.pdf">
+                            <image src="img/paper.PNG" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+<!--  
+                        <li>
+                            <a href="https://github.com/google/mipnerf">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4> 
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Many point cloud classification methods are developed under the assumption 
+                    that all point clouds in the dataset are well aligned with the canonical 
+                    axes so that the 3D Cartesian point coordinates can be employed to learn features. 
+                    When input point clouds are not aligned, the classification performance drops significantly. 
+                    In this work, we focus on a mathematically transparent point cloud classification method called PointHop, 
+                    analyze its reason for failure due to pose variations, and solve the problem by replacing its pose dependent 
+                    modules with rotation invariant counterparts. The proposed method is named SO(3)-Invariant PointHop 
+                    (or S3I-PointHop in short). We also significantly simplify the PointHop pipeline using only one single hop 
+                    along with multiple spatial aggregation techniques. The idea of exploiting more spatial information is novel. 
+                    Experiments on the ModelNet40 dataset demonstrate the superiority of S3I-PointHop over traditional PointHop-like methods.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method overview
+                </h3>
+                <image src="img/Architecture-S3I-PointHop.png" class="img-responsive" alt="overview"><br>
+
+            </div>
+        </div>
+
+<!-- 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Wikipedia</a> provides an excellent introduction to spatial anti-aliasing techniques.
+                </p>
+            
+                </p>
+            </div>
+        </div> -->
         
-      </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="./PointHop/index.html">
-            <papertitle>PointHop: An Explainable Machine Learning Method for Point Cloud Classification</papertitle>
-          </a>
-          <br>
-          <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">Min Zhang</a>,
-	      <strong>Pranav Kadam</strong>,
-              <a href="https://www.linkedin.com/in/shanliu">Shan Liu</a>,
-              <a href="https://mcl.usc.edu/people/cckuo/">C.-C. Jay Kuo</a>
-          <br>
-    <em>IEEE Transactions on Multimedia, 2020</em>
-          <br>
-          <a href="./PointHop/index.html">project page</a>
-    |
-          <a href="https://arxiv.org/abs/1907.12766">arXiv</a>
- 
-          <p>Point cloud classification method based on Successive Subspace Learning (SSL)</p>
-        </td>
-      </tr>
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+   Coming soon
+</textarea>
+                </div>
+            </div>
+        </div>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Miscellaneous</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-					
-
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/USC-logo.png" width="120">
-            </td>
-            <td width="75%" valign="center">
-              <ul>
-                <li><b>Reviewer</b>, ISPRS Journal of Photogrammetry and Remote Sensing</li>
-                <li><b>Course Grader</b>, EE 569 - Introduction to Digital Image Processing, Spring 2020</li>
-                <li><b>Course Grader</b>, EE 562 - Random Processes, Spring 2020</li>
-                <li><b>Course Grader</b>, EE 567 - Communication Systems, Fall 2019</li>
-                <li><b>Student Tech Assistant</b>, USC Transportation, Jan 2019 - Jun 2019</li>
-              </ul>
-            </td>
-          </tr>
-
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src="images/MIT-logo.png" width="140">
-          </td>
-          <td width="75%" valign="center">
-            <ul>
-              <li>Collaborated with <a href="https://research.mitwpu.edu.in/researcher/arti-khaparde">Dr. Arti Khaparde</a> and <a href="https://www.sac.gov.in/Vyom/index.jsp">Indian Space Research Organization (ISRO)</a> in project on study of vegetation dynamics from satellite images</li>
-              <li>Interned for part-time at <a href="https://anveshak.com/index.php">Anveshak Technology and Knowledge Solutions</a>, Pune in IoT domain</li>
-              <li>Led in organizing conferences, workshops, guest lectures, and competitions as a part of MIT Pune IEEE Students Branch</li>
-              <li>Arranged study tours and other recreation activities for students</li>
-            </ul>
-          </td>
-        </tr>
-										
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                This website is a modification of Jon Barron's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
-                Feel free to use it in your own way while attributing Jon.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgement
+                </h3>
+                <p class="text-justify">
+                This work was supported by Tencent Media Lab.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
