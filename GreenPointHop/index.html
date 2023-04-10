@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>GreenPointHop</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                A tiny Machine Learning model for <br>Point Cloud Object Classification</br> 
+                <small>
+                    Submitted to APSIPA Transactions on Signal and Information Processing
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=s2zpoasAAAAJ&hl=en&authuser=1">
+                            Min Zhang
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    <li>
+                        <a href="http://mcl.usc.edu/people/graduate-students/#Jintang_Xue">
+                            Jintang Xue
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    <li>
+                        <a href="https://pranavkdm.github.io/">
+                          Pranav Kadam
+                        </a>
+                        </br>University of Southern California
+                    </li><br>
+                    <li>
+                        <a href="http://mcl.usc.edu/people/graduate-students/#Hardik_Prajapati">
+                            Hardik Prajapati
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shanliu">
+                          Shan Liu
+                        </a>
+                        </br>Tencent Media Lab
+                    </li>
+                    <li>
+                        <a href="https://mcl.usc.edu/people/cckuo/">
+                          C.-C. Jay Kuo
+                        </a>
+                        </br>University of Southern California
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="./GreenPointHop.pdf">
+                            <image src="img/paper.PNG" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+<!--  
+                        <li>
+                            <a href="https://github.com/google/mipnerf">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4> 
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    The design of a tiny machine learning model, which can be deployed in mobile and edge devices, for
+                    point cloud object classification is investigated in this work. To achieve this objective, we replace the
+                    multi-scale representation of a point cloud object with a single-scale representation for complexity
+                    reduction, and exploit rich 3D geometric information of a point cloud object for performance improvement. 
+                    The proposed solution is named Green-PointHop due to its low computational complexity.
+                    We evaluate the performance of Green-PointHop on ModelNet40 and ScanObjectNN two datasets.
+                    Green-PointHop has a model size of 64K parameters. It demands 2.3M floating-point operations
+                    (FLOPs) to classify a ModelNet40 object of 1024 down-sampled points. Its classification performance
+                    gaps against the state-of-the-art DGCNN method are 3% and 7% for ModelNet40 and ScanObjectNN,
+                    respectively. On the other hand, the model size and inference complexity of DGCNN are 42X and
+                    1203X of those of Green-PointHop, respectively.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method overview
+                </h3>
+                <image src="img/Architecture-GreenPointHop.PNG" class="img-responsive" alt="overview"><br>
+
+            </div>
+        </div>
+
+<!-- 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Wikipedia</a> provides an excellent introduction to spatial anti-aliasing techniques.
+                </p>
+            
+                </p>
+            </div>
+        </div> -->
+        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{zhang2023tiny,
+    title={A Tiny Machine Learning Model for Point Cloud Object Classification},
+    author={Zhang, Min and Xue, Jintang and Kadam, Pranav and Prajapati, Hardik 
+    and Liu, Shan and Kuo, C-C Jay},
+    journal={arXiv preprint arXiv:2303.10898},
+    year={2023}
+    }
+</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgement
+                </h3>
+                <p class="text-justify">
+                This work was supported by Tencent Media Lab.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
